@@ -1,0 +1,29 @@
+model:
+  name: yolov8n
+  task: detect
+  confidence: 0.5
+  iou: 0.45
+
+classes:
+  vehicle:
+    - car
+    - motorcycle
+    - bus
+    - truck
+    - bicycle
+  person:
+    - person
+
+helmet_detection:
+  model: helmet_detector.pt
+  confidence: 0.4
+
+plate_detection:
+  model: plate_detector.pt
+  confidence: 0.3
+
+tracking:
+  algorithm: bytetrack
+  track_thresh: 0.25
+  track_buffer: 30
+  match_thresh: 0.8

@@ -1,0 +1,45 @@
+# Web framework
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# Database
+sqlalchemy==2.0.36
+alembic==1.14.1
+asyncpg==0.30.0
+psycopg2-binary==2.9.10
+
+# Task queue
+celery[redis]==5.4.0
+redis==5.2.1
+
+# ML / Detection
+ultralytics==8.3.52
+opencv-python-headless==4.10.0.84
+numpy==2.2.1
+
+# OCR
+paddleocr==2.9.1
+paddlepaddle==3.0.0b1
+
+# Tracking
+supervision==0.25.1
+
+# Object storage (optional, for MinIO mode)
+minio==7.2.12
+
+# PDF evidence generation
+fpdf2==2.8.2
+
+# Utilities
+pydantic==2.10.4
+pydantic-settings==2.7.1
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+httpx==0.28.1
+Pillow==11.1.0
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.25.0
+pytest-cov==6.0.0
